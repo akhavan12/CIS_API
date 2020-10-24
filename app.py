@@ -7,7 +7,7 @@ app = flask.Flask(__name__) ## make a flask app
 
 @app.route('/', methods=['GET'])
 def home():
-    q = int(request.args['q'])
+    q = request.args['q']
     try:
         return q
     except KeyError:
