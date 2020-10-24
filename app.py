@@ -11,4 +11,4 @@ def home():
     try:
         return q
     except KeyError:
-        return KeyError
+        return 'error'
